@@ -3,7 +3,8 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     background-color: #262626;
     /* no scroll when control is unactive */
     overflow: hidden;
@@ -11,7 +12,16 @@ html, body {
 
 .webgl {
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     outline: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
 }

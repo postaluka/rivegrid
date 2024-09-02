@@ -3,14 +3,31 @@ import * as rive from "@rive-app/canvas"
 /**
  * Canvas
  */
-const canvas = document.getElementById('canvasDriver')
+const canvasDriver = document.getElementById('canvasDriver')
+const canvasGentleRockFan = document.getElementById('canvasGentleRockFan')
 
 const huppDriver = new rive.Rive(
     {
         src: 'rive/hupp_driver.riv',
-        canvas: canvas,
+        canvas: canvasDriver,
         autoplay: true,
         stateMachines: 'CAR STATE MACHINE',
+        // animations: ['EYES', 'CABIN MOVEMENT', 'WHEEL CTRL', 'FRONT GROUP', 'WHEEL HOVER exit', 'WHEEL HOVER enter', 'SIGNAL'],
+        // onLoad: (_) =>
+        // {
+        //     const stateMachineInputs = huppDriver.stateMachineInputs('CAR STATE MACHINE')
+        //     // trigger = stateMachineInputs[0]
+        //     console.log(stateMachineInputs);
+
+        // },
+    }
+)
+const gentleRockFan = new rive.Rive(
+    {
+        src: 'rive/gentle_rock_fan.riv',
+        canvas: canvasGentleRockFan,
+        autoplay: true,
+        stateMachines: 'GENTLE ROCK FAN',
         // animations: ['EYES', 'CABIN MOVEMENT', 'WHEEL CTRL', 'FRONT GROUP', 'WHEEL HOVER exit', 'WHEEL HOVER enter', 'SIGNAL'],
         // onLoad: (_) =>
         // {
