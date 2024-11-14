@@ -5,6 +5,11 @@ import * as rive from "@rive-app/canvas"
  */
 const canvasDriver = document.getElementById('canvasDriver')
 const canvasGentleRockFan = document.getElementById('canvasGentleRockFan')
+const canvasInito = document.getElementById('canvasInito')
+
+// CARD 01
+
+/* 
 
 const huppDriver = new rive.Rive(
     {
@@ -22,6 +27,13 @@ const huppDriver = new rive.Rive(
         // },
     }
 )
+
+*/
+
+// CARD 01
+
+/*
+
 const gentleRockFan = new rive.Rive(
     {
         src: 'rive/gentle_rock_fan.riv',
@@ -38,6 +50,29 @@ const gentleRockFan = new rive.Rive(
         // },
     }
 )
+
+*/
+
+// CARD 03
+
+const inito = new rive.Rive(
+    {
+        src: 'rive/inito.riv',
+        canvas: canvasInito,
+        autoplay: true,
+        stateMachines: 'INITO STATE MACHINE',
+        // animations: ['EYES', 'CABIN MOVEMENT', 'WHEEL CTRL', 'FRONT GROUP', 'WHEEL HOVER exit', 'WHEEL HOVER enter', 'SIGNAL'],
+        // onLoad: (_) =>
+        // {
+        //     const stateMachineInputs = huppDriver.stateMachineInputs('CAR STATE MACHINE')
+        //     // trigger = stateMachineInputs[0]
+        //     console.log(stateMachineInputs);
+
+        // },
+    }
+)
+
+
 
 // let skinTriggerInput;
 // const riveInstance = new rive.Rive({
